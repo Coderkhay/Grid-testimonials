@@ -1,0 +1,659 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*DEFAULT*/
+@media screen and (max-width: 576px) {
+  body {
+    background: hsl(0, 0%, 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  div#container {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(15, minmax(80px, auto));
+    gap: 20px;
+  }
+  div.col-1 {
+    background: hsl(263, 55%, 52%);
+    padding: 12px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    color: white;
+    text-align: left;
+  }
+
+  #sec1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+
+  h6#num1 {
+    color: white;
+    opacity: 50%;
+  }
+
+  p.col-1 {
+    margin-top: 10px;
+  }
+
+  blockquote.col-1 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  div.col-2 {
+    background: hsl(217, 19%, 35%);
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/3;
+    grid-row: 3/6;
+  }
+  #sec2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+  h6#num2 {
+    opacity: 50%;
+  }
+
+  p.col-2 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  blockquote.col-2 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*DIV COLUMN 3*/
+  .col-3 {
+    background: white;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-row: 6/8;
+    grid-column: 1/3;
+  }
+  #sec3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+  h6#num3 {
+    color: black;
+    opacity: 50%;
+  }
+
+  blockquote.col-3 {
+    font-size: smaller;
+    opacity: 50%;
+    margin-top: 10px;
+  }
+
+  /*DIV COLUMN 4*/
+  .col-4 {
+    background: white;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/3;
+    grid-row: 8/11;
+  }
+  #sec4 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+  h6#num4 {
+    color: black;
+    opacity: 50%;
+  }
+  p.col-4 {
+    margin-top: 10px;
+  }
+
+  blockquote.col-4 {
+    font-size: smaller;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*DIV COLUMN 5*/
+  .col-5 {
+    background: hsl(219, 29%, 14%);
+    padding: 12px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/3;
+    grid-row: 11/14;
+  }
+  #sec5 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+  h6#num5 {
+    opacity: 50%;
+  }
+  p.col-5 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  blockquote.col-5 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*STYLING IMAGES*/
+  img#first {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#second {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#third {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#fourth {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#fifth {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+}
+
+/*SMALL*/
+@media screen and (min-width: 576px) {
+  body {
+    background: hsl(0, 0%, 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  div#container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(15, minmax(80px, auto));
+    gap: 20px;
+  }
+  div.col-1 {
+    background: hsl(263, 55%, 52%);
+    padding: 12px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    color: white;
+    text-align: left;
+  }
+
+  #sec1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+
+  h6#num1 {
+    color: white;
+    opacity: 50%;
+  }
+
+  p.col-1 {
+    margin-top: 10px;
+  }
+
+  blockquote.col-1 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  div.col-2 {
+    background: hsl(217, 19%, 35%);
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/4;
+    grid-row: 3/6;
+  }
+  #sec2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+  h6#num2 {
+    opacity: 50%;
+  }
+
+  p.col-2 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  blockquote.col-2 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*DIV COLUMN 3*/
+  .col-3 {
+    background: white;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-row: 6/8;
+    grid-column: 1/4;
+  }
+  #sec3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+  h6#num3 {
+    color: black;
+    opacity: 50%;
+  }
+
+  blockquote.col-3 {
+    font-size: smaller;
+    opacity: 50%;
+    margin-top: 10px;
+  }
+
+  /*DIV COLUMN 4*/
+  .col-4 {
+    background: white;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/4;
+    grid-row: 8/11;
+  }
+  #sec4 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+  h6#num4 {
+    color: black;
+    opacity: 50%;
+  }
+  p.col-4 {
+    margin-top: 10px;
+  }
+
+  blockquote.col-4 {
+    font-size: smaller;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*DIV COLUMN 5*/
+  .col-5 {
+    background: hsl(219, 29%, 14%);
+    padding: 12px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/4;
+    grid-row: 11/14;
+  }
+  #sec5 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+  h6#num5 {
+    opacity: 50%;
+  }
+  p.col-5 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  blockquote.col-5 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*STYLING IMAGES*/
+  img#first {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#second {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#third {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#fourth {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#fifth {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+}
+
+/*||MEDIUM*/
+@media screen and (min-width: 768px) {
+  body {
+    background: hsl(0, 0%, 81%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  div#container {
+    display: grid;
+    grid-template-columns: repeat(7, 120px);
+    grid-template-rows: repeat(5, minmax(80px, auto));
+    gap: 20px;
+  }
+
+  /*COLUMN STYLING*/
+  div.col-1 {
+    background: hsl(263, 55%, 52%);
+    padding: 12px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/4;
+    grid-row: 1/3;
+    color: white;
+    text-align: left;
+  }
+
+  #sec1 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+
+  h6#num1 {
+    color: white;
+    opacity: 50%;
+  }
+
+  p.col-1 {
+    margin-top: 10px;
+  }
+
+  blockquote.col-1 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /*DIV COLUMN 2*/
+  div.col-2 {
+    background: hsl(217, 19%, 35%);
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 4/6;
+    grid-row: 1/3;
+  }
+  #sec2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+  h6#num2 {
+    opacity: 50%;
+  }
+
+  p.col-2 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  blockquote.col-2 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*DIV COLUMN 3*/
+  .col-3 {
+    background: white;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-row: 1/5;
+    grid-column: 6/8;
+  }
+  #sec3 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+  h6#num3 {
+    color: black;
+    opacity: 50%;
+  }
+
+  blockquote.col-3 {
+    font-size: smaller;
+    opacity: 50%;
+    margin-top: 10px;
+  }
+
+  /*DIV COLUMN 4*/
+  .col-4 {
+    background: white;
+    padding: 10px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+  #sec4 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+  }
+  h6#num4 {
+    color: black;
+    opacity: 50%;
+  }
+  p.col-4 {
+    margin-top: 10px;
+  }
+
+  blockquote.col-4 {
+    font-size: smaller;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  /*DIV COLUMN 5*/
+  .col-5 {
+    background: hsl(219, 29%, 14%);
+    padding: 12px;
+    border: 1px transparent solid;
+    border-radius: 5px;
+    grid-column: 3/6;
+    grid-row: 3/5;
+  }
+  #sec5 {
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    padding-top: 3px;
+    color: white;
+  }
+  h6#num5 {
+    opacity: 50%;
+  }
+  p.col-5 {
+    margin-top: 10px;
+    color: white;
+  }
+
+  blockquote.col-5 {
+    font-size: smaller;
+    color: white;
+    opacity: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /*STYLING IMAGES*/
+  img#first {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#second {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#third {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#fourth {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+
+  img#fifth {
+    border: 1px hsl(263, 55%, 52%) double;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 3px;
+  }
+}
